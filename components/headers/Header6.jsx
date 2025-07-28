@@ -13,8 +13,13 @@ export default function Header6() {
               <div className="header-inner-wrap">
                 <div className="header-logo">
                   <Link href={`/`} className="site-logo">
-                    {/* Replaced Image with styled text */}
-                    <span className="text-logo">{siteContent.agent.name}</span>
+                    <Image
+                      src="/images/logo/niclogo.png"
+                      alt="Nicholas Crouch Logo"
+                      width={240}
+                      height={60}
+                      style={{ objectFit: "contain" }}
+                    />
                   </Link>
                 </div>
                 <nav className="main-menu">

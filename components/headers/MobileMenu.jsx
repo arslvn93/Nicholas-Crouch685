@@ -19,8 +19,13 @@ export default function MobileMenu() {
       <div className="offcanvas-header top-nav-mobile">
         <div className="offcanvas-title">
           <Link href={`/`}>
-            {/* Replaced Image with styled text */}
-            <span className="text-logo">{siteContent.agent.name}</span>
+            <Image
+              src="/images/logo/niclogo.png"
+              alt="Nicholas Crouch Logo"
+              width={240}
+              height={60}
+              style={{ objectFit: "contain" }}
+            />
           </Link>
         </div>
         <div data-bs-dismiss="offcanvas" aria-label="Close">
